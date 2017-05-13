@@ -11,7 +11,7 @@ create table Food (
     rating integer,
     price integer,
     cuisine varchar(128),
-    primary key (name, address)
+    primary key (name, address),
     foreign key (neighborhood_name, zipcode) references Neighborhood(neighborhood_name, zipcode),
     neighborhood_name varchar(128) not null,
     zipcode integer not null
