@@ -1,3 +1,12 @@
+drop table Demographics;
+drop table Food;
+drop table Property_Details;
+drop table Recreational;
+drop table Schools;
+drop table Shooting_Crimes;
+drop table Transportation;
+drop table Neighborhood;
+
 create table Neighborhood (
     neighborhood_name varchar(128),
     zipcode integer,
@@ -21,7 +30,7 @@ create table Food (
 create table Schools (
     school_id integer primary key,
     name varchar(128),
-    gradeLevel integer,
+    gradeLevel varchar(128),
     enrollment varchar(128),
     type varchar(128),
     foreign key (neighborhood_name, zipcode) references Neighborhood(neighborhood_name, zipcode),
@@ -63,7 +72,7 @@ create table Recreational (
     zipcode integer not null
 );
 
-create table Property_Detials (
+create table Property_Details (
     property_id integer primary key,
     type varchar(128),
     status varchar(128),

@@ -9,7 +9,7 @@ insert into Neighborhood (neighborhood_name, zipcode) values ('Manayunk', 19004)
 insert into Neighborhood (neighborhood_name, zipcode) values ('Washington Square', 19014);  -- 6
 insert into Neighborhood (neighborhood_name, zipcode) values ('German Town', 19112);        -- 7
 insert into Neighborhood (neighborhood_name, zipcode) values ('Chestnut Hill', 19007);      -- 8
-insert into Neighborhood (neighborhood_name, zipcode) values ('East Passyunk', 19102);      -- 9
+insert into Neighborhood (neighborhood_name, zipcode) values ('East Passyunk', 19112);      -- 9
 insert into Neighborhood (neighborhood_name, zipcode) values ('Old City', 19102);           -- 10
 insert into Neighborhood (neighborhood_name, zipcode) values ('Rittenhouse Square', 19003); -- 11
 
@@ -17,24 +17,46 @@ insert into Neighborhood (neighborhood_name, zipcode) values ('Rittenhouse Squar
 -- Data generated from http://centercityphila.org/explore-center-city/ccd-restaurant-week
 
 insert into Food (name, address, category, rating, price, cuisine, neighborhood_name, zipcode)
-values ('Barbuzzo', '110 S 13th Street', 'Restaurant', 4, 4, 'Mediterranean', 'Old City', 19102); -- 1
+values ('Barbuzzo', '110 S 13th Street', 'Restaurant', 4, 4, 'Mediterranean', 'Old City', 19102);         -- 1
 insert into Food (name, address, category, rating, price, cuisine, neighborhood_name, zipcode)
-values ('Bar Volver', '330 S Broad Street', 'Restaurant', 4, 4, 'American', 'Washington Square', 19014); -- 2
+values ('Bar Volver', '330 S Broad Street', 'Restaurant', 4, 4, 'American', 'Washington Square', 19014);  -- 2
 insert into Food (name, address, category, rating, price, cuisine, neighborhood_name, zipcode)
-values ('Pizza and Wings', '3300 Race Street', 'Food Joint', 2, 1, 'American', 'Powelton', 19104); -- 3
+values ('Pizza and Wings', '3300 Race Street', 'Food Joint', 2, 1, 'American', 'Powelton', 19104);        -- 3
 insert into Food (name, address, category, rating, price, cuisine, neighborhood_name, zipcode)
-values ('Ochatto', '3400 Chestnut Street', 'Restaurant', 4, 3, 'Japanese', 'University City', 19104); -- 4
+values ('Ochatto', '3400 Chestnut Street', 'Restaurant', 4, 3, 'Japanese', 'University City', 19104);     -- 4
 insert into Food (name, address, category, rating, price, cuisine, neighborhood_name, zipcode)
-values ('Fogo de Ciao', '1223 Cedar Street', 'Restaurant', 5, 5, 'Brazillian', 'Manayunk', 19005); -- 5
+values ('Fogo de Ciao', '1223 Cedar Street', 'Restaurant', 5, 5, 'Brazillian', 'Manayunk', 19005);        -- 5
 insert into Food (name, address, category, rating, price, cuisine, neighborhood_name, zipcode)
-values ('Joes', '800 Race Street', 'Coffee House', 4, 3, 'Coffee', 'Rittenhouse Square', 19003); -- 6
+values ('Joes', '800 Race Street', 'Coffee House', 4, 3, 'Coffee', 'Rittenhouse Square', 19003);          -- 6
 insert into Food (name, address, category, rating, price, cuisine, neighborhood_name, zipcode)
-values ('Jane G', '2300 Chestnut Street', 'Restaurant', 4, 4, 'Chinese', 'Rittenhouse Square', 19003); -- 7
+values ('Jane G', '2300 Chestnut Street', 'Restaurant', 4, 4, 'Chinese', 'Rittenhouse Square', 19003);    -- 7
 insert into Food (name, address, category, rating, price, cuisine, neighborhood_name, zipcode)
-values ('Starbucks', '13 N Washington Street', 'Coffee House', 4, 3, 'Coffee', 'Manayunk', 19004); -- 8
+values ('Starbucks', '13 N Washington Street', 'Coffee House', 4, 3, 'Coffee', 'Manayunk', 19004);        -- 8
 insert into Food (name, address, category, rating, price, cuisine, neighborhood_name, zipcode)
-values ('Golden Pig', '16 City Avenue', 'Restaurant', 4, 3, 'Fusion', 'Manayunk', 19004); -- 9
+values ('Golden Pig', '16 City Avenue', 'Restaurant', 4, 3, 'Fusion', 'Manayunk', 19004);                 -- 9
 insert into Food (name, address, category, rating, price, cuisine, neighborhood_name, zipcode)
-values ('32 Brew', '56 N Market Street', 'Coffee House', 4, 3, 'Coffee', 'German Town', 19112); -- 10
+values ('32 Brew', '56 N Market Street', 'Coffee House', 4, 3, 'Coffee', 'German Town', 19112);           -- 10
 
+-- Realistic Data for Schools
+-- Data generated from http://centercityphila.org/explore-center-city/ccd-restaurant-week
 
+insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
+values(2244, 'West Isles School', 'Middle School', 523, 'Private', 'East Passyunk', 19112);               -- 1
+insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
+values(4029, 'Atlas Public School', 'High School', 2031, 'Public', 'Belle Vista', 19107);                 -- 2
+insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
+values(4033, 'Manayunk Private', 'High School', 120, 'Private', 'Manayunk', 19005);                       -- 3
+insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
+values(5411, 'Drexel University', 'University', 25595, 'Private', 'University City', 19104);              -- 4
+insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
+values(5621, 'University of Pennsylvania', 'University', 24806, 'Private', 'University City', 19104);     -- 5
+insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
+values(5854, 'Temple University', 'University', 39581, 'Private', 'Rittenhouse Square', 19003);           -- 6
+insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
+values(5955, 'Villanova University', 'University', 10842, 'Public', 'Old City', 19102);                   -- 7
+insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
+values(4563, 'Abraham Lincoln High School', 'High School', 1842, 'Public', 'Chestnut Hill', 19007);       -- 8
+insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
+values(2563, 'Advent Middle School', 'Middle School', 3084, 'Public', 'Belle Vista', 19107);              -- 9
+insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
+values(1033, 'Andrew Jackson School', 'Elementary School', 289, 'Private', 'Belle Vista', 19107);         -- 10
