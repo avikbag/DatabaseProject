@@ -14,7 +14,8 @@ create table Food (
     primary key (name, address),
     foreign key (neighborhood_name, zipcode) references Neighborhood(neighborhood_name, zipcode),
     neighborhood_name varchar(128) not null,
-    zipcode integer not null
+    zipcode integer not null,
+    check (rating >= 1 and rating <= 5)
 );
 
 create table Schools (
