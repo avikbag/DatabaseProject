@@ -140,3 +140,28 @@ insert into recreational (rec_id, name, type, age_group, rating, neighborhood_na
 values (6787, 'Regal Cinemas', 'Cinema Hall', '{10, 49}', 4, 'Washington Square', 19014);           -- 9
 insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
 values (5681, 'Noto', 'Nightlife', '{21, 49}', 5, 'Rittenhouse Square', 19003);                     -- 10 
+
+-- Dataset for property_details
+insert into property_details (property_id, type, status, price, size, bedbath, neighborhood_name, zipcode)
+values (332444, 'Townhouse', 'Rent', 1200, 1660, '2/2', 'University City', '19104');
+insert into property_details (property_id, type, status, price, size, bedbath, neighborhood_name, zipcode)
+values (758745, 'Apartment', 'Rent', 1400, 1660, '2/2', 'University City', '19104');
+insert into property_details (property_id, type, status, price, size, bedbath, neighborhood_name, zipcode)
+values (894834, 'Condo', 'Sale', 2000000, 1660, '6/4', 'Belle Vista', '19107');
+insert into property_details (property_id, type, status, price, size, bedbath, neighborhood_name, zipcode)
+values (143425, 'Apartment', 'Rent', 1400, 1660, '2/2', 'Powelton', '19104');
+insert into property_details (property_id, type, status, price, size, bedbath, neighborhood_name, zipcode)
+values (987445, 'House', 'Sale', 450000, 1660, '4/3', 'Manayunk', '19005');
+insert into property_details (property_id, type, status, price, size, bedbath, neighborhood_name, zipcode)
+values (903463, 'Apartment', 'Rent', 1400, 1660, '2/2', 'German Town', '19112');
+insert into property_details (property_id, type, status, price, size, bedbath, neighborhood_name, zipcode)
+values (973467, 'House', 'Sale', 430000, 1660, '2/2', 'East Passyunk', '19112');
+insert into property_details (property_id, type, status, price, size, bedbath, neighborhood_name, zipcode)
+values (907453, 'Apartment', 'Rent', 1400, 1660, '2/2', 'Chestnut Hill', '19007');
+insert into property_details (property_id, type, status, price, size, bedbath, neighborhood_name, zipcode)
+values (767023, 'House', 'Rent', 1400, 1660, '2/2', 'Washington Square', '19014');
+insert into property_details (property_id, type, status, price, size, bedbath, neighborhood_name, zipcode)
+values (987232, 'Apartment', 'Rent', 1400, 1660, '2/2', 'University City', '19104');
+
+-- Transportation
+-- insert into transportation ()
