@@ -90,31 +90,53 @@ values (159875, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), Tr
 -- There will be multiple demographic data for a given neighborhood. 
 
 -- for powelton
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (234, 31, 'Latino', 80000, 5.67, 'Powelton', '19104');
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (708, 37, 'White', 80000, 5.67, 'Powelton', '19104');
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (408, 28, 'African American', 80000, 5.67, 'Powelton', '19104');
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (137, 30, 'Asian', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (234, 'Latino', 31, 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (234, 'White', 37, 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (234, 'African American', 28, 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (234, 'Asian', 30, 80000, 5.67, 'Powelton', '19104');
 
 -- for University City
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (234, 31, 'Latino', 80000, 5.67, 'Powelton', '19104');
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (708, 37, 'White', 80000, 5.67, 'Powelton', '19104');
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (408, 28, 'African American', 80000, 5.67, 'Powelton', '19104');
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (137, 30, 'Asian', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (742, 'Latino', 31, 80000, 5.67, 'University City', '19104');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (742, 'White', 37, 80000, 5.67, 'University City', '19104');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (742, 'African American', 28, 80000, 5.67, 'University City', '19104');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (742, 'Asian', 30, 80000, 5.67, 'University City', '19104');
 
 -- Belle Vista
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (234, 31, 'Latino', 80000, 5.67, 'Powelton', '19104');
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (708, 37, 'White', 80000, 5.67, 'Powelton', '19104');
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (408, 28, 'African American', 80000, 5.67, 'Powelton', '19104');
-insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
-values (137, 30, 'Asian', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (453, 'Latino', 31, 80000, 5.67, 'Belle Vista', '19107');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (453, 'White', 37, 80000, 5.67, 'Belle Vista', '19107');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (453, 'African American', 28, 80000, 5.67, 'Belle Vista', '19107');
+insert into demographics (demographic_id, ethnicity, median_age_group, median_salary, unemployment, neighborhood_name, zipcode)
+values (453, 'Asian', 30, 80000, 5.67, 'Belle Vista', '19107');
+
+-- Dataset for recreational activities
+insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
+values (3425, 'Brads gym', 'Gym', '{20, 49}', 4, 'University City', 19104);                         -- 1
+insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
+values (2342, 'Bono Shooting Range', 'Shooting Range', '{24, 55}', 3, 'Belle Vista', 19107);        -- 2
+insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
+values (4356, 'Alpha', 'Gym', '{10, 49}', 4, 'East Passyunk', 19112);                               -- 3
+insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
+values (2409, 'Sky Zone', 'Family', '{5, 45}', 2, 'Manayunk', 19005);                               -- 4
+insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
+values (2478, 'Regal Cinemas', 'Cinema Hall', '{10, 70}', 3, 'University City', 19104);             -- 5
+insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
+values (3976, 'City Tavern', 'Night Life', '{21, 60}', 4, 'Old City', 19102);                       -- 6
+insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
+values (5987, 'Alley Forge', 'Bowling', '{10, 49}', 2, 'Chestnut Hill', 19007);                     -- 7
+insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
+values (4675, 'Rumor', 'Night Life', '{21, 55}', 4, 'Rittenhouse Square', 19003);                   -- 8 
+insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
+values (6787, 'Regal Cinemas', 'Cinema Hall', '{10, 49}', 4, 'Washington Square', 19014);           -- 9
+insert into recreational (rec_id, name, type, age_group, rating, neighborhood_name, zipcode)
+values (5681, 'Noto', 'Nightlife', '{21, 49}', 5, 'Rittenhouse Square', 19003);                     -- 10 

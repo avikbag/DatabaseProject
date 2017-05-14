@@ -49,11 +49,12 @@ create table Shooting_Crimes (
 );
 
 create table Demographics (
-    demographic_id integer primary key,
+    demographic_id integer,
+    ethnicity varchar(128),
     median_age_group integer,
-    majority_ethnicity varchar(128),
     median_salary integer,
     unemployment real,
+    primary key(demographic_id, ethnicity),
     foreign key (neighborhood_name, zipcode) references Neighborhood(neighborhood_name, zipcode),
     neighborhood_name varchar(128) not null,
     zipcode integer not null
@@ -63,9 +64,8 @@ create table Recreational (
     rec_id integer primary key,
     name varchar(128),
     type varchar(128),
-    age_group integer,
+    age_group integer[],
     rating integer,
-    price integer,
     foreign key (neighborhood_name, zipcode) references Neighborhood(neighborhood_name, zipcode),
     neighborhood_name varchar(128) not null,
     zipcode integer not null
