@@ -60,3 +60,61 @@ insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood
 values(2563, 'Advent Middle School', 'Middle School', 3084, 'Public', 'Belle Vista', 19107);              -- 9
 insert into Schools (school_id, name, gradelevel, enrollment, type, neighborhood_name, zipcode)
 values(1033, 'Andrew Jackson School', 'Elementary School', 289, 'Private', 'Belle Vista', 19107);         -- 10
+
+-- Realistic Data for Officer Incidents
+-- Data generated from http://centercityphila.org/explore-center-city/ccd-restaurant-week
+-- Todo: radomize incident times
+
+insert into shooting_crimes (incident_id, incident_time, fatality, officer_involved, neighborhood_name, zipcode)
+values (743322, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), False, True, 'Old City', 19102);          -- 1
+insert into shooting_crimes (incident_id, incident_time, fatality, officer_involved, neighborhood_name, zipcode)
+values (647383, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), True, True, 'Chestnut Hill', 19007);      -- 2
+insert into shooting_crimes (incident_id, incident_time, fatality, officer_involved, neighborhood_name, zipcode)
+values (291643, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), False, False, 'Washington Square', 19014);-- 3
+insert into shooting_crimes (incident_id, incident_time, fatality, officer_involved, neighborhood_name, zipcode)
+values (584169, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), False, False, 'Manayunk', 19005);         -- 4
+insert into shooting_crimes (incident_id, incident_time, fatality, officer_involved, neighborhood_name, zipcode)
+values (487236, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), True, True, 'Manayunk', 19005);           -- 5
+insert into shooting_crimes (incident_id, incident_time, fatality, officer_involved, neighborhood_name, zipcode)
+values (963587, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), False, False, 'Manayunk', 19005);         -- 6
+insert into shooting_crimes (incident_id, incident_time, fatality, officer_involved, neighborhood_name, zipcode)
+values (487698, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), False, True, 'German Town', 19112);       -- 3
+insert into shooting_crimes (incident_id, incident_time, fatality, officer_involved, neighborhood_name, zipcode)
+values (397584, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), True, False, 'Old City', 19102);          -- 4
+insert into shooting_crimes (incident_id, incident_time, fatality, officer_involved, neighborhood_name, zipcode)
+values (647895, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), False, True, 'Powelton', 19104);          -- 5
+insert into shooting_crimes (incident_id, incident_time, fatality, officer_involved, neighborhood_name, zipcode)
+values (159875, to_timestamp('16-05-2011 15:36:38', 'dd-mm-yyyy hh24:mi:ss'), True, True, 'University City', 19104);    -- 6
+
+-- Data insert for demographics
+-- There will be multiple demographic data for a given neighborhood. 
+
+-- for powelton
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (234, 31, 'Latino', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (708, 37, 'White', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (408, 28, 'African American', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (137, 30, 'Asian', 80000, 5.67, 'Powelton', '19104');
+
+-- for University City
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (234, 31, 'Latino', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (708, 37, 'White', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (408, 28, 'African American', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (137, 30, 'Asian', 80000, 5.67, 'Powelton', '19104');
+
+-- Belle Vista
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (234, 31, 'Latino', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (708, 37, 'White', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (408, 28, 'African American', 80000, 5.67, 'Powelton', '19104');
+insert into demographics (demographic_id, median_age_group, majority_ethnicity, median_salary, unemployment, neighborhood_name, zipcode)
+values (137, 30, 'Asian', 80000, 5.67, 'Powelton', '19104');

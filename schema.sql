@@ -39,11 +39,10 @@ create table Schools (
 );
 
 create table Shooting_Crimes (
-    school_id integer primary key,
-    name varchar(128),
-    gradeLevel integer,
-    enrollment varchar(128),
-    type varchar(128),
+    incident_id integer primary key,
+    incident_time timestamp,
+    fatality boolean,
+    officer_involved boolean,
     foreign key (neighborhood_name, zipcode) references Neighborhood(neighborhood_name, zipcode),
     neighborhood_name varchar(128) not null,
     zipcode integer not null
@@ -54,7 +53,7 @@ create table Demographics (
     median_age_group integer,
     majority_ethnicity varchar(128),
     median_salary integer,
-    unemployment integer,
+    unemployment real,
     foreign key (neighborhood_name, zipcode) references Neighborhood(neighborhood_name, zipcode),
     neighborhood_name varchar(128) not null,
     zipcode integer not null
@@ -86,9 +85,9 @@ create table Property_Details (
 
 create table Transportation (
     transportation_id integer primary key,
-    station varchar(128),
+    station_address varchar(128),
     type varchar(128),
-    route varchar(128),
+    route integer,
     foreign key (neighborhood_name, zipcode) references Neighborhood(neighborhood_name, zipcode),
     neighborhood_name varchar(128) not null,
     zipcode integer not null
