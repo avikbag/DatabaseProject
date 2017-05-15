@@ -87,7 +87,7 @@ create table Transportation (
     transp_id integer primary key,
     station_address varchar(128),
     type varchar(128),
-    route integer,
+    route integer[],
     foreign key (neighborhood_name, zipcode) references Neighborhood(neighborhood_name, zipcode),
     neighborhood_name varchar(128) not null,
     zipcode integer not null

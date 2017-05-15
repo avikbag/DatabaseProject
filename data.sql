@@ -164,4 +164,23 @@ insert into property_details (property_id, type, status, price, size, bedbath, n
 values (987232, 'Apartment', 'Rent', 1400, 1660, '2/2', 'University City', '19104');
 
 -- Transportation
--- insert into transportation ()
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (554, '3404 Market Street', 'Bus', '{45, 77, 23}', 'University City', 19104);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (345, '41 Cedar Street', 'Bus', '{39, 11, 94}', 'East Passyunk', 19112);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (765, '34 S Broad Street', 'Subway', '{2, 3, 5}', 'Old City', 19102);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (134, '98 S Temple Avenue', 'Subway', '{3, 5, 7}', 'Manayunk', 19004);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (985, '2301 Sansom Street', 'Bus', '{41, 72, 38}', 'Rittenhouse Square', 19003);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (562, '3001 Chestnut Street', 'Subway', '{1, 2, 3, 4, 5, 7}', 'University City', 19104);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (974, '99 West City Avenue', 'Subway', '{3, 7}', 'German Town', 19112);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (349, '13 S Spruce Street', 'Bus', '{45, 77, 23}', 'Powelton', 19104);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (236, '4 N Science Drive', 'Bus', '{45, 77, 23}', 'Washington Square', 19014);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (194, '22 W Boulevard', 'Subway', '{1, 6, 7}', 'Chestnut Hill', 19007);
