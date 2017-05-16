@@ -184,3 +184,7 @@ insert into transportation (transp_id, station_address, type, route, neighborhoo
 values (236, '4 N Science Drive', 'Bus', '{45, 77, 23}', 'Washington Square', 19014);
 insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
 values (194, '22 W Boulevard', 'Subway', '{1, 6, 7}', 'Chestnut Hill', 19007);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (754, '34 N Broad Street', 'Bus', '{2, 3, 5}', 'Old City', 19102);
+insert into transportation (transp_id, station_address, type, route, neighborhood_name, zipcode)
+values (399, '13 S Baring Street', 'Subway', '{45, 77, 23}', 'Powelton', 19104);
