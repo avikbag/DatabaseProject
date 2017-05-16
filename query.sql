@@ -1,6 +1,6 @@
 -- Query #1 
 -- Gives you a sefety score based on shooting crime incidents of all neighborhoods
-select nb.neighborhood_name, 2*count(sc.fatality = true)-count(sc.officer_involved = true) as safety_score
+select nb.neighborhood_name, 2*count(CASE WHEN sc.fatality THEN 1 END)-count(CASE WHEN sc.officer_involved THEN 1 END)
 from neighborhood as nb full outer join shooting_crimes as sc
 on nb.zipcode = sc.zipcode and nb.neighborhood_name = sc.neighborhood_name
 group by nb.neighborhood_name
@@ -21,7 +21,7 @@ select sch.name as safest_schools
 from shooting_crimes as sc full outer join schools as sch
 on sc.zipcode = sch.zipcode and sc.neighborhood_name = sch.neighborhood_name
 group by sch.name
-having 2*count(sc.fatality = true)-count(sc.officer_involved = true) <= 1
+having 2*count(CASE WHEN sc.fatality THEN 1 END)-count(CASE WHEN sc.officer_involved THEN 1 END) <= 0 
 ;
 
 -- Query #4
