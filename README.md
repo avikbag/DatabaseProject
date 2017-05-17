@@ -1,0 +1,19 @@
+resin/
+--bootstrap.css
+--script.js
+--style.css
+--view_neighborhoods.jsp
+--WEB-INF/
+----classes
+----project/ (following MVC architectural pattern
+------controller/
+---------NeighborhoodServlet.java
+------model/
+---------{has all the java and Modelf files}
+------util/
+---------{dbUtils}
+------pgBundle.properties // my database credentials
+----lib/
+----tmp/
+----work/
+----resin-web.xml // this is the view includes servlet mapping 
