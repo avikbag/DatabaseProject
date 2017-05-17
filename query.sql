@@ -17,12 +17,11 @@ where nb.neighborhood_name = 'Manayunk'
 
 -- Query #3
 -- Gives you schools that have a safety score lower than 1
-select sch.name as safest_schools
-from shooting_crimes as sc full outer join schools as sch
-on sc.zipcode = sch.zipcode and sc.neighborhood_name = sch.neighborhood_name
-group by sch.name
-having 2*count(CASE WHEN sc.fatality THEN 1 END)-count(CASE WHEN sc.officer_involved THEN 1 END) <= 0
-;
+SELECT sch.name AS safest_schools
+FROM shooting_crimes AS sc RIGHT OUTER JOIN schools AS sch
+ON sc.zipcode = sch.zipcode AND sc.neighborhood_name = sch.neighborhood_name
+GROUP BY sch.name
+HAVING 2*count(CASE WHEN sc.fatality THEN 1 END)-count(CASE WHEN sc.officer_involved THEN 1 END) <= 0;
 
 -- Query #4
 -- Gives you all the neighborhoods that have both subway and bus
